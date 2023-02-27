@@ -1,0 +1,21 @@
+using System;
+
+namespace revstr
+{
+	public class main
+	{
+		public static void Main(string[]args)
+		{
+			Console.WriteLine("Enter A string to Reverse :");
+			string a=Console.ReadLine();
+		//	char[] arry=a.ToCharArray();
+			string b=string.Empty;
+			int len=a.Length-1;
+			for(int i=len;i>=0;i--)
+			{
+				b+=a[i];
+			}
+			Console.WriteLine("reverseString :"+b);
+		}
+	}
+}
